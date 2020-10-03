@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -16,5 +16,12 @@ export class HomeComponent implements OnInit {
 
   countClick(): void {
     this.clickCounter += 1;
+  }
+
+  setClass(): object {
+    return {
+      greater: this.clickCounter > 4,
+      less: this.clickCounter <= 4
+    };
   }
 }
