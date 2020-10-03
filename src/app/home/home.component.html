@@ -16,4 +16,13 @@
 </div>
 
 
+<div class="play-container">
+<ng-template [ngIf]="clickCounter > 4" [ngIfElse]="none">
+  <p>The Click Counter Is Greater Than 4</p>
+</ng-template>
+  <ng-template #none>
+    <p>The Click Counter Is Less Than 4</p>
+  </ng-template>
+</div>
+
 
